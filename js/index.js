@@ -87,6 +87,41 @@ contentParagraphs[3].textContent =
 contentParagraphs[4].textContent =
   siteContent["main-content"]["vision-content"];
 
+contentParagraphs[5].textContent = siteContent.contact.address;
+contentParagraphs[6].textContent = siteContent.contact.phone;
+contentParagraphs[7].textContent = siteContent.contact.email;
+contentParagraphs[8].textContent = siteContent.footer.copyright;
+
+// navItems.style.color = "green";
+
+navItems[0].style.color = "green";
+navItems[1].style.color = "green";
+navItems[2].style.color = "green";
+navItems[3].style.color = "green";
+navItems[4].style.color = "green";
+navItems[5].style.color = "green";
+
+contentParagraphs[0].style.cssText = "color: red; border: 0.2rem solid green";
+contentParagraphs[1].style.cssText = "color: blue; border: 0.2rem solid red";
+contentParagraphs[2].style.cssText = "color: green; bordeR: 0.4rem solid blue";
+contentParagraphs[3].style.cssText = "color: purple; bordeR: 0.4rem solid pink";
+contentParagraphs[4].style.cssText = "color: grey; border: 0.4rem solid orange";
+
+const navLinks = document.querySelector("nav");
+
+const newNavLink = document.createElement("a");
+newNavLink.setAttribute("href", "#");
+newNavLink.innerHTML = "new Link";
+navLinks.appendChild(newNavLink);
+
+const newNavLink2 = document.createElement("a");
+newNavLink2.setAttribute("href", "#");
+newNavLink2.innerHTML = "IMPORTANT LINK";
+navLinks.prepend(newNavLink2);
+
+newNavLink.style.cssText = "color: red; font-size: 1rem; font-weight: bold";
+newNavLink2.style.cssText = "color: purple; font-size: 1rem; font-weight: bold";
+
 // const secondImage = document.getElementById("cta-img");
 // secondImage.setAttribute("src", "img/header-img.png");
 
