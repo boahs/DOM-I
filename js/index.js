@@ -46,24 +46,39 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
-const secondImage = document.querySelector("#cta-img");
-secondImage.setAttribute("src", "img/header-img.png");
+const navItems = document.querySelectorAll("a");
+navItems[0].textContent = siteContent.nav["nav-item-1"];
+navItems[1].textContent = siteContent.nav["nav-item-2"];
+navItems[2].textContent = siteContent.nav["nav-item-3"];
+navItems[3].textContent = siteContent.nav["nav-item-4"];
+navItems[4].textContent = siteContent.nav["nav-item-5"];
+navItems[5].textContent = siteContent.nav["nav-item-6"];
 
-const firstHeader = document.querySelector("h1");
-const firstButton = document.querySelector("button");
-const fourthHeader = document.querySelector("h4");
-const fourthParagraph = document.querySelector("p");
+const headerOne = document.querySelector("h1");
+headerOne.textContent = siteContent.cta.h1;
 
-firstButton.textContent = "Get Started";
-firstHeader.textContent = "We love CATS";
-fourthHeader.textContent = "Features";
-fourthParagraph.textContent = "ohohoh";
+const button = document.querySelector("button");
+button.textContent = siteContent.cta.button;
 
-const navItems = document.querySelector("a");
-const middleImage = document.querySelector(".middle-img");
+// const secondImage = document.getElementById("cta-img");
+// secondImage.setAttribute("src", "img/header-img.png");
 
-middleImage.setAttribute("src", "img/mid-page-accent.jpg");
-navItems.append("Services");
+// const firstHeader = document.querySelector("h1");
+// const firstButton = document.querySelector("button");
+// const fourthHeader = document.querySelector("h4");
+// const fourthParagraph = document.querySelector("p")[0];
+
+// firstButton.textContent = siteContent.cta.button;
+// firstHeader.textContent = siteContent.cta.h1;
+// fourthHeader.textContent = siteContent["main-content"]["features-h4"];
+// fourthParagraph.textContent = siteContent["main-content"]["features-content"];
+
+// const navItems = document.querySelector("a");
+// const middleImage = document.querySelector(".middle-img");
+// const aboutA = document.createElement("a");
+// aboutA.textContent = "About";
+// middleImage.setAttribute("src", "img/mid-page-accent.jpg");
+// navItems.append("Services");
 
 // const button = document.getElementsByTagName("button");
 // button.className = "Button-Class";
