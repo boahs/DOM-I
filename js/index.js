@@ -60,6 +60,20 @@ headerOne.textContent = siteContent.cta.h1;
 const button = document.querySelector("button");
 button.textContent = siteContent.cta.button;
 
+const headerImage = document.querySelector("#cta-img");
+headerImage.setAttribute("src", siteContent.cta["img-src"]);
+
+const middleImage = document.querySelector("#middle-img");
+middleImage.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+const h4 = document.querySelectorAll("h4");
+
+h4[0].textContent = siteContent["main-content"]["features-h4"];
+h4[1].textContent = siteContent["main-content"]["about-h4"];
+h4[2].textContent = siteContent["main-content"]["services-h4"];
+h4[3].textContent = siteContent["main-content"]["product-h4"];
+h4[4].textContent = siteContent["main-content"]["vision-h4"];
+h4[5].textContent = siteContent["main-content"]["contact-h4"];
 // const secondImage = document.getElementById("cta-img");
 // secondImage.setAttribute("src", "img/header-img.png");
 
